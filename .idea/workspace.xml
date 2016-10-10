@@ -33,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nain2.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nain2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nain2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -46,6 +46,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webapps/ROOT/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="84" column="78" selection-start-line="84" selection-start-column="78" selection-end-line="84" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="IdeDocumentHistory">
@@ -53,6 +63,7 @@
       <list>
         <option value="$PROJECT_DIR$/main.java" />
         <option value="$PROJECT_DIR$/nain2.java" />
+        <option value="$PROJECT_DIR$/webapps/ROOT/index.jsp" />
       </list>
     </option>
   </component>
@@ -329,6 +340,14 @@
             <element signature="e#66#67#0" expanded="true" />
             <element signature="e#117#118#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/ROOT/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="84" column="78" selection-start-line="84" selection-start-column="78" selection-end-line="84" selection-end-column="78" />
+          <folding />
         </state>
       </provider>
     </entry>
