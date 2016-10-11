@@ -48,40 +48,19 @@
        }
    });
 
-   String result1 = "";
-   String result2 = "";
-   String result3 = "";
-   String result4 = "";
-   String result5 = "";
-   String result6 = "";
-   String result7 = "";
-
    try{
-	  result1 = "1....";
       // Create a default MimeMessage object.
       MimeMessage message = new MimeMessage(mailSession);
-
-      result2 = "2....";
       // Set From: header field of the header.
       message.setFrom(new InternetAddress(from));
-
-      result3 = "3....";
       // Set To: header field of the header.
       message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-
-      result4 = "4....";
       // Set Subject: header field
       message.setSubject("This is the Subject Line!");
-
-      result5 = "5....";
       // Now set the actual message
       message.setText("This is actual message");
-
-      result6 = "6....";
       // Send message
       Transport.send(message);
-
-      result7 = "7....";
       result = "Sent message successfully....";
    }catch (MessagingException mex) {
       mex.printStackTrace();
@@ -186,7 +165,7 @@
 			</center>
 			<p align="center">
 				<%
-				   out.println("Result: " + result1 + result2 + result3 + result4 + result5 + result6 + result7 + result + "\n");
+				   out.println("Result: " + result + "\n");
 				%>
 			</p>
 
