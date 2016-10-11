@@ -17,6 +17,16 @@
 
    // Setup mail server
    properties.setProperty("mail.smtp.host", host);
+   properties.setProperty("mail.smtp.port", "465");
+
+   //smtp関連の設定
+   properties.setProperty("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+   properties.setProperty("mail.smtp.socketFactory.fallback", "false");
+   properties.setProperty("mail.smtp.socketFactory.port", "465");
+
+   //タイムアウトの設定
+   properties.setProperty("mail.smtp.connectiontimeout", "50000");
+   properties.setProperty("mail.smtp.timeout", "50000");
 
    // Get the default Session object.
    Session mailSession = Session.getDefaultInstance(properties);
