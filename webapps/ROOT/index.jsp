@@ -21,32 +21,40 @@
    // Get the default Session object.
    Session mailSession = Session.getDefaultInstance(properties);
 
+   String result1 = "";
+   String result2 = "";
+   String result3 = "";
+   String result4 = "";
+   String result5 = "";
+   String result6 = "";
+   String result7 = "";
+
    try{
-	  String result1 = "1....";
+	  result1 = "1....";
       // Create a default MimeMessage object.
       MimeMessage message = new MimeMessage(mailSession);
 
-      String result2 = "2....";
+      result2 = "2....";
       // Set From: header field of the header.
       message.setFrom(new InternetAddress(from));
 
-      String result3 = "3....";
+      result3 = "3....";
       // Set To: header field of the header.
       message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
 
-      String result4 = "4....";
+      result4 = "4....";
       // Set Subject: header field
       message.setSubject("This is the Subject Line!");
 
-      String result5 = "5....";
+      result5 = "5....";
       // Now set the actual message
       message.setText("This is actual message");
 
-      String result6 = "6....";
+      result6 = "6....";
       // Send message
       Transport.send(message);
 
-      String result7 = "7....";
+      result7 = "7....";
       result = "Sent message successfully....";
    }catch (MessagingException mex) {
       mex.printStackTrace();
