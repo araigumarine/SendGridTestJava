@@ -1,7 +1,14 @@
 ﻿<%@ page import="java.io.*,java.util.*,javax.mail.*"%>
 <%@ page import="javax.mail.internet.*,javax.activation.*"%>
 <%@ page import="javax.servlet.http.*,javax.servlet.*" %>
+<%@ page import="javax.mail.Authenticator" %>
+
 <%
+
+
+   //認証情報作成
+   // Authenticator auth = new MailAuthenticator();
+
    String result;
    // Recipient's email ID needs to be mentioned.
    String to = "wash.araiguma@gmail.com";
@@ -14,6 +21,9 @@
 
    // Get system properties object
    Properties properties = System.getProperties();
+
+   //認証を有効にする
+   properties.setProperty("mail.smtp.auth", "true");
 
    // Setup mail server
    properties.setProperty("mail.smtp.host", host);
@@ -29,7 +39,14 @@
    properties.setProperty("mail.smtp.timeout", "50000");
 
    // Get the default Session object.
-   Session mailSession = Session.getDefaultInstance(properties);
+   // Session mailSession = Session.getDefaultInstance(properties);
+   // Session session = Session.getInstance(properties, auth);
+
+   Session session = Session.getInstance(properties, new javax.mail.Authenticator(){
+       protected PasswordAuthentication getPasswordAuthentication(){
+           return new PasswordAuthentication("azure_67b952316059b0529e1c50be20787b64@azure.com", "Np-n9Hm$2#AY");
+       }
+   });
 
    String result1 = "";
    String result2 = "";
