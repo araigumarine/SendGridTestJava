@@ -42,7 +42,7 @@
    // Session mailSession = Session.getDefaultInstance(properties);
    // Session session = Session.getInstance(properties, auth);
 
-   Session session = Session.getInstance(properties, new javax.mail.Authenticator(){
+   Session mailSession = Session.getInstance(properties, new javax.mail.Authenticator(){
        protected PasswordAuthentication getPasswordAuthentication(){
            return new PasswordAuthentication("azure_67b952316059b0529e1c50be20787b64@azure.com", "Np-n9Hm$2#AY");
        }
